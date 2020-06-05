@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Prediction Home</title>
+  </head>
+  <body>
+    <h1>Prediction Time</h1>
+      <p>Use the form below to predict which user is more likely to say a tweet</p>
+      <form action="/tweets/create" method="POST">
+          <label>Tweet</label>
+          <input type="text" name="tweet_text" placeholder="Enter tweet here" value="Enter tweet here">
+          <label>Tweeter User A:</label>
+          <select name="tweeter_user">
+            <option value="A1">User 1</option>
+            <option value="A2">User 2</option>
+            <option value="A3">User 3</option>
+          </select>
+          <label>Tweeter User B:</label>
+          <select name="tweeter_user">
+            <option value="A1">User 1</option>
+            <option value="A2">User 2</option>
+            <option value="A3">User 3</option>
+          </select>
+          <button>Submit</button>
+        </form>
+  </body>
+</html>
